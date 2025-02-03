@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-accent-dark dark:text-white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-accent-light via-accent-beige to-primary-100;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border border-accent-dark/20 dark:border-white/20 rounded-lg hover:bg-accent-light/50 dark:hover:bg-accent-dark/50 transition-colors;
+  }
+
+  .card {
+    @apply bg-white dark:bg-accent-dark rounded-lg shadow-lg;
+  }
+}
